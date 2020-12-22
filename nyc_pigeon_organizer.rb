@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
     end
   end
   
-  final_array.each do |name, detail |
+  final_array.each do |name, detail|
     data.each do |input_key, input_value|
       if !detail[input_key]
         detail[input_key] = []
@@ -23,5 +23,10 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  
+  final_array do |name, detail|
+    data.each do |input_key, input_value|
+      input_value.each do |person|
+        if input_key = detail && 
   final_array
 end
