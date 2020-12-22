@@ -26,7 +26,11 @@ def nyc_pigeon_organizer(data)
   
   final_array do |name, detail|
     data.each do |input_key, input_value|
-      input_value.each do |person|
-        if input_key = detail && 
+      input_value.each do |traits, person|
+        if input_key = detail && person.include?(name)
+          detail << traits.to_s
+        end
+      end
+    end
   final_array
 end
