@@ -29,6 +29,7 @@ def nyc_pigeon_organizer(data)
       input_value.each do |traits, person|
         if input_key = detail && person.include?(name)
           detail << traits.to_s
+          binding.pry
         end
       end
     end
