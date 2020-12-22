@@ -5,9 +5,9 @@ def nyc_pigeon_organizer(data)
   #leave the origianl symbol and turn second level key into String
   #assign that as value to the key
   final_array = {}
-  data.each do |k1,v1|
-    v1.each do |k2,v2|
-      v2.each do |name|
+  data.each do |input_key, input_value|
+    input_value.each do |inner_key, names|
+      names.each do |name|
         if !final_array[name]
           final_array[name] = {}
         end
