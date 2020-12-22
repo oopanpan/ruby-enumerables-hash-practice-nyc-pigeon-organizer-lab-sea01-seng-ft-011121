@@ -15,10 +15,10 @@ def nyc_pigeon_organizer(data)
     end
   end
   
-  final_array.each do |final_key, name |
+  final_array.each do |name, detail |
     data.each do |input_key, input_value|
-      if !name[input_key]
-        name[input_key] = []
+      if !detail[input_key]
+        detail[input_key] = []
         binding.pry
       end
     end
