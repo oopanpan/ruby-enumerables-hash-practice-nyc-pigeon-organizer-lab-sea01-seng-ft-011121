@@ -10,13 +10,19 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         if !final_array[name]
           final_array[name] = {}
-          binding.pry
+          
         end
       end
     end
   end
   
-  data.each do |k1,v1|
-    final_array
+  final_array.each do |final_key, name |
+    data.each do |input_key, input_value|
+      if !name[input_key]
+        name[input_key] = {}
+        binding.pry
+      end
+    end
   end
+  final_array
 end
