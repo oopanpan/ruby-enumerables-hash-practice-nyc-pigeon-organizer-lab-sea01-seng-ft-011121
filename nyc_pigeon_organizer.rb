@@ -10,7 +10,6 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         if !final_array[name]
           final_array[name] = {}
-          
         end
       end
     end
@@ -20,7 +19,7 @@ def nyc_pigeon_organizer(data)
     data.each do |input_key, input_value|
       if !name[input_key]
         name[input_key] = []
-        #binding.pry
+        binding.pry
       end
     end
   end
